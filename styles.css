@@ -1,0 +1,106 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  line-height: 1.75;
+}
+
+.guide-link {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.intro {
+  padding: clamp(2.5rem, 7vw, 5.5rem) 0 3rem;
+}
+
+.app-name {
+  color: #575b52;
+  font-weight: 600;
+  margin: 0;
+}
+
+.intro h1 {
+  font-size: clamp(1.75rem, 5.3vw, 3.5rem);
+  line-height: 1.24;
+  margin: 0.65rem 0 1rem;
+  text-wrap: balance;
+}
+
+.intro-copy,
+.guide-section > p,
+.steps {
+  max-width: 44rem;
+}
+
+.actions,
+.guide-footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+}
+
+.context {
+  color: #575b52;
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+.guide-section {
+  border-top: 1px solid var(--line);
+  padding: 2rem 0;
+}
+
+.guide-section h2 {
+  font-size: clamp(1.25rem, 3.8vw, 1.65rem);
+  line-height: 1.4;
+  margin: 0 0 1rem;
+}
+
+.guide-section h3 {
+  font-size: 1rem;
+}
+
+.examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 0.75rem;
+}
+
+.examples article {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  padding: 1rem;
+}
+
+.examples h3 {
+  margin-top: 0;
+}
+
+.examples p:last-child {
+  margin-bottom: 0;
+}
+
+.steps {
+  padding-inline-start: 1.55rem;
+  margin-bottom: 1.5rem;
+}
+
+.steps li + li {
+  margin-top: 0.75rem;
+}
+
+.guide-section details {
+  max-width: 44rem;
+  border-bottom: 1px solid var(--line);
+  padding: 0.65rem 0;
+}
+
+.guide-section summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.guide-footer {
+  border-top: 1px solid var(--line);
+  padding: 1.5rem 0 2.5rem;
+}
